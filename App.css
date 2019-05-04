@@ -1,0 +1,143 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.App-header {
+  background-color: #272927;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(6px + 2vmin);
+  color: white;
+}
+
+.App-footer {
+  background-color: #272927;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(6px + 2vmin);
+  color: white;
+}
+
+.App-body {
+  background-color: #272927;
+  min-height: 80vh; 
+  max-height: 80vh;
+  display: flex;
+  /* flex-direction: column; */
+  flex-direction: row;
+  /* align-items: center; */
+  font-size: calc(6px + 2vmin);
+  color: white;
+}
+
+.Menu {
+  background-color: #272927;
+  min-width: 8vw;
+  min-height: 90vh;  
+  max-height: 90vh;
+  align-self: flex-start;
+  font-size: calc(6px + 2vmin);
+  color: white;
+}
+
+.Workspace {  
+  background-color: #282c34;
+  min-width: 84vw;
+  /* max-width: calc(84vw - 1px); */
+  min-height: 80vh; 
+  /* max-height: calc(90vh - 1px); */
+  align-self: center;  
+  font-size: calc(6px + 2vmin);
+  color: white;
+  border: 1px solid black;
+  /* border-bottom: none; */
+  border-top-left-radius: 1vh;
+  border-top-right-radius: 1vh;
+  /* overflow-y: scroll; */
+  padding: 0;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.ClassDiagram {
+  background-color: #61dafb;
+  margin-top: 0.2vh;
+  margin-bottom: 0.2vh;
+  height: 6vh;
+  width: 8vw;
+}
+
+::-webkit-scrollbar { 
+  display: none; 
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* ---------------------  */
+* {
+  box-sizing: border-box;
+}
+html, body {
+  height: 100%;
+}
+/* body {
+  color: #222;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 200;
+  margin: 0 50px;
+} */
+.react-draggable, .cursor {
+  cursor: move;
+}
+.no-cursor {
+  cursor: auto;
+}
+.cursor-y {
+  cursor: ns-resize;
+}
+.cursor-x {
+  cursor: ew-resize;
+}
+.react-draggable strong {
+  background: #ddd;
+  border: 1px solid #999;
+  border-radius: 3px;
+  display: block;
+  margin-bottom: 10px;
+  padding: 3px 5px;
+  text-align: center;
+}
+.box {
+  z-index: 20;
+  position: absolute;
+  background: grey;
+  border: 1px solid #999;
+  border-radius: 3px;
+  width: 180px;
+  height: 180px;
+  margin: 20px;
+  padding: 10px;
+  float: left;
+  font-size: 0.6em;
+}
