@@ -1,2 +1,0 @@
-# mck-uml
-Learning reactjs.
